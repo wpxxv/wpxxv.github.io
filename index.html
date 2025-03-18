@@ -10,32 +10,73 @@
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
-<body id="INDEX">
+<body>
 <!-- ヘッダー -->
 <header>
-    <h1><a href="top.html">Site name</a></h1>
+    <h1><a href="top.html">備忘録</a></h1>
+    <nav id="mainMenu" class="menu">
+        <ul>
+            <li><a href="#MENU_2">about</a></li>
+            <li><a href="#MENU_3">main</a></li>
+            <li><a href="#MENU_4">mail</a></li>
+        </ul>
+    </nav>
 </header>
 
 <!-- メイン -->
 <main>
     <article>
         <div>
-            <p>
-                ここにサイトの説明やご挨拶など書けます。
-            </p>
-            <p>
-                バナーなどを設置してもOK。
-            </p>
-            <p class="text-center">
-                <a href="top.html" class="image"><img src="banner.jpg"></a>
+            <dl class="border inline">
+                <dt>2025/03/18</dt>
+                    <dd>
+                        新規作成
+                    </dd>
+            </dl>
+            <p class="text-right">
+                <a href=""><i class="fas fa-chevron-right"></i> 更新履歴</a>
             </p>
         </div>
-        <h4><span>注意</span></h4>
+    </article>
+    
+    <article id="MENU_1">
+        <h2><span>template</span></h2>
+        <h3>document</h3>
         <div>
             <p>
-                各種見出しや装飾も勿論使えます。<br>
-                注意書きなど<em>目立たせたい</em>部分に。
+                このテンプレートの詳細については、<a href="https://espace.monbalcon.net/" target="_bleak">eapace</a>のテンプレートサンプル内に「ドキュメント」を設置しております。<br>
+                各装飾、要素などの使い方について詳細を記載しておりますので、サイト作成の参考にご覧ください。
             </p>
+        </div>
+
+        <h3>sample page</h3>
+        <div>
+            <ul>
+                <li><a href="index.html">indexページ</a></li>
+            </ul>
+        </div>
+    </article>
+    
+    <article id="MENU_2">
+        <h2><span>about</span></h2>
+        <div>
+            <p>
+                サイトについてや自己紹介など。
+            </p>
+        </div>
+
+        <h3>about link</h3>
+        <div>
+            <dl class="inline">
+                <dt>site name</dt>
+                    <dd>サイト名</dd>
+                <dt>url</dt>
+                    <dd>http://~</dd>
+                <dt>banner</dt>
+                    <dd>
+                        <img src="banner.jpg"><br>
+                    </dd>
+            </dl>
         </div>
     </article>
 </main>
@@ -45,6 +86,11 @@
     <div class="copyright">
         <a href="https://espace.monbalcon.net/" target="_bleak">Template by espace.</a>
     </div>
+    <nav id="pageBottomNav" class="fixed-menu">
+        <ul>
+            <li id="pageTop" class="pagetop"><button></button></li>
+        </ul>
+    </nav>
 </footer>
 
 <!-- jQuery -->
